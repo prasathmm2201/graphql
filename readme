@@ -1,0 +1,27 @@
+mutation updateUser($input: UpdateUsernameInput!) {
+  updateUsername(input: $input) {
+    id
+  }
+}
+
+
+query getAll {
+  users (id:1){
+    name
+    id
+    nationality
+  }
+}
+
+query getUser{
+  user(id:7){
+    id
+    username
+  }
+}
+
+mutation createUser($input: CreateUserInput!) {
+  createUser(input: $input) {
+    id
+  }
+}
